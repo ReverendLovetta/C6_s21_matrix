@@ -17,6 +17,13 @@ typedef struct matrix_struct {
   int columns;
 } matrix_t;
 
+/* macroses: */
+#define RETURN_AND_PRINT_MASSAGE(MESSAGE, STATUS) \
+  do {                                            \
+    fprintf(stderr, (MESSAGE));                   \
+    return (STATUS);                              \
+  } while (0)
+
 /*------------------------*/
 /* Operations for matrix: */
 /*------------------------*/
